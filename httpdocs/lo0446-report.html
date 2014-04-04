@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Liam O'Shea | lo0446</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml ; charset=utf-8"/>
+</head>
+
+<body>
+<h1> Web Technology | Liam O'Shea (lo0446) | <a href="http://www.ltoshea.co.uk"> Online Here </a> </h1>
+
+<h2>Introduction</h2>
+<p>Having previously had no web experience other than basic HTML I decided that I wanted to write as much as possible from scratch, avoiding any frameworks. I fully expected this to make my task harder however I wanted to understand the technologies and how the fit together at a basic level so after this course was complete I was equipped to actually produce web code. I decided to create a personal profile/portfolio page since it is now my final year and I thought it would be a sensible way to show off my technical abilities.</p>
+
+<h2>XHTML</h2>
+<p>I used a variety of HTML tags without adding any unnecessary features (e.g. I had no need for radio buttons on my contact form.)  I checked my website through using your server and through validation websites which will be discussed more later.</p>
+
+<h2>Grid Layout</h2>
+<p>My first step was to learn how a web page is successfully laid out, taking care to pay attention to any methods for resizing the web-page based on the viewport size. I initially started by creating my own grid layout with absolute pixel values so I could understand the concepts. The layout consisted of 12 columns with 65px along with 20px “gutters” (margins) for each column excluding the first, which I choose to equal 1000px which would be an easy number to work with to produce relative values. I used the formula used in responsive design result = target/context which gave me columns with a width of 6.5%. Next I created a grid-container as a parent class with the twelve grids as children. In here I set properties such as minimum height to prevent the columns from collapsing and margin values as well as float and padding elements. Since I was floating my columns I created a “clearfix” class to clear our floats to ensure the grid-container won't collapse.
+Finally I used some “@media” queries to change my layout based on screen size, for anything under   768px in width I remove and reduce some padding as well as creating a “hide-mobile” class which I later apply to elements such as my banner, logo and specific text columns to make the page much better for smaller screens and mobiles.</p>
+
+<h2>SVG's (Direct drawing &amp; Inkscape)</h2>
+<p>I used them in two different ways in my project. Initially I went about embedding SVG code directly in with HTML which worked well for simple shapes such as lines or rectangles. I did however want to make more use of of SVG's since they are scalable and most excitingly can have their attributes edited by CSS. This was of particular interest to me as I wanted to create an animation that changed color on hover-over. This is where I began to run into problems, editing the SVG properties in the style sheet seem to make no difference whatsoever. I also tried to set them within the same page (not in an extra style-sheet) to no avail. I tried various different techniques which threw me for quite a long time. Eventually I figured out I had to open up my external SVG file in a text editor and explicitly add the style-sheet within the SVG file otherwise none of the styles changes would take effect. While I was there I also removed any unnecessary extra code added by Inkscape which reduced the size of the file ~50%.</p>
+
+
+<h2>Entrance Page (CSS Animation &amp; Javascript)</h2>
+<p>This took a particularly long time to get right although I'm satisfied with the results. The entrance page is made up of SVG's with all the animation done with CSS. 
+The border of my white canvas is made up of directly drawn SVG lines, the first 1/3rd a solid line, followed by 1/3rd empty space followed by 1/3rd solid line again. On the page only the first 1/3rd of each line is visible which then allowed me to use CSS transforms to translate all four lines. This means on hover  it gives the appearance of the top and bottom lines moving around the canvas to position at the sides, when in reality it's just an illusion. I also introduced a “loader” which I really used to demonstrate my animation abilities (again in CSS) since my site actually loads very quickly.
+I created a javascript file to fade out the loader and to fade-in my SVG arrow as well as change it's colour on hover-over. I tried to make sure my CSS was explicit for both Mozilla and Webkit based browsers as this was the page I was most concerned about not working.</p>
+
+<h2>Contact form</h2>
+<p>I based my contact form on a tutorial from (http://www.elated.com/)
+I made use of HTML 5 attributes such as “placeholder”, “autofocus”, “maxlength”, “required” and also specifying “input type=”email” which together a great job of helping to validate user input as well as auto focusing on the fields for ease of use. There was also additional validation in the javascript.
+It took me quite a  lot of work to get the fade-in and fade-out to fully work, but by the end I was very satisfied with it. On pressing the “send e-mail” button a PHP file is loaded to send the e-mail and the response from that is then used to generate the correct user message before fading back to the main-page. It will also respond to the “Esc” button on the keyboard as well as clicking the cancel button.</p>
+
+<h2>Photo-gallery</h2>
+<p>The photo-gallery is a jQuery plugin known as “Cycle2” which I integrated into my site. I actually spent an incredible amount of time trying to get this positioned correctly. I initially had it in the same place that I had previously had a “featured image” class, where the text was wrapping correctly. Unfortunately after introducing cycle2 my layout ended up all messed up, despite it being in the same place in the HTML as the previous featured image. The text ended up underneath the image with the image changing over the top.  I did some research and concluded it could be down to z-values however this turned out not to be the case.
+The way the javascript created the “box” for the image either occurred after the text was rendered (meaning that part of the grid layout was empty and hence the text filled it,) or it was introducing a blank width element before then applying the images. I eventually got around this by placing both the gallery and side text inside their own grid-containers. I also then used CSS to force a minimum height and width on the empty element the javascript was creating and well as some minimum padding which corrected my layout problems.</p>
+
+<h2>GIMP</h2>
+<p>I have used GIMP in the past for small tasks but found it infuriating in terms of layout, I often find half the toolbars seem to be missing. This time I spent some time getting to know GIMP and realised there was a “single window mode” which worked much better for me.
+I took an existing photo of mine and added an alpha channel before highlighted a circular part and taking the inverse. I then set about removing that inverse to create a transparent background so I was just left with a circular picture. This worked nicely in the top left where a company logo would usually be.</p>
+
+<h3>Navigation bar & fonts</h3>
+<p>I have included a variety of fonts in my CSS using “https://” links to avoid any warnings or insecure  content. After some experimentation I decided I liked the navigation bar to stick to the top and follow you around as you scroll.</p>
+
+<h3>Social Buttons</h3>
+<p>I converted some social media buttons into .png format linked them to my online profiles and inserted them into the footer.</p>
+
+<h3>Tab Icon</h3>
+<p>I spent some time using GIMP creating a 16x16 .ico file that displays on the webpage tab.</p>
+
+<h3>Validation</h3>
+<p>After running my sites through several validators the errors left are to do with my use of “maxlength” “input type=email” and “placeholder” which are all HTML5 attributes which enhance my page and as such I decided to keep them in.  The only other errors are me assigning class names for the header and footer like so “header class="main-header""</p>
+
+<h2>Cross-compatibility</h2>
+<p>I used normalize.css which tries to remove the idiosyncrasies across browsers and renders elements more consistently with modern standards. I also used a <!--[if IE]--> statement to include a HTML5 javascript shiv designed to help IE deal with various tags, especially HTML 5. 
+I tested my main page across multiple browsers and can confirm it worked well under Linux and Windows with:
+Chrome v10+ (now on v31)
+Firefox v10+ (no on v28)
+IE 9+
+
+Since Safari is based rendering engine as Chrome I decided not to test that separately. 
+The only exception was that Firefox failed to load any of my prefered fonts, which is something I will look into as I make progress on my site in the future.  Even earlier versions of Chrome and Firefox did a respectable job of rendering my site but IE broke horribly.</p>
+
+<h2>Improvements</h2>
+<ul>
+	<li> More Responsive Web Design </li>
+	<li> 'More personlity' in the web pages </li>
+	<li> More fancy Javascript </li>
+</ul>
+<p> Although I tried to convert as much as I could to relative measurements such as % and em instead of px I did not succeed with all of it. Although em's are better for overall accessibility I found it more intuitive to work in px and that it gave me more control. (e.g. allowing me to produce a font at precisely the size I want.) My next step would be to finish off converting everything away from absolute pixel values. </p>
+
+<p> I spent a lot of this assignement learning how to code in web languages, how they fitted together and doing functional, useful things with my code. In the future I hope to look at changing the colour scheme and trying to spend some more time on how it looks and how the user can interact with it. </p>
+
+<p> I would love to introduce a perfectly smooth sliding transition from my first web page to my second, I'm sure this could be achieved with some more jQuery knowledge</p>

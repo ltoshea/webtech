@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../css/loader.css" ?>
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="128px"
+   height="128px"
+   viewBox="0 0 512 512"
+   enable-background="new 0 0 128 128"
+   xml:space="preserve">
+   <metadata
+     id="metadata9"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata>
+   <path id="svg-arrow"
+     d="m 256,90 c -91.755,0 -166,74.258 -166,166 0,91.755 74.259,166 166,166 91.755,0 166,-74.258 166,-166 C 422,164.245 347.741,90 256,90 z m 0,372 C 142.229,462 50,369.771 50,256 50,142.229 142.229,50 256,50 c 113.771,0 206,92.229 206,206 0,113.771 -92.229,206 -206,206 z M 343.402,199.955 375.509,232.218 255,352.154 134.49,232.218 166.597,199.955 255,287.937 343.402,199.955 z"/>
+   </svg>

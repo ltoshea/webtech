@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<!--<link href='https://fonts.googleapis.com/css?family=Exo:600' rel='stylesheet' type='text/css'/>-->
+	<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<title>Liam O'Shea | Tech Enthusiast</title>
+	<meta http-equiv="content-type" content="application/xhtml+xml ; charset=utf-8"/>
+	<link rel="shortcut icon" href="img/icon.ico" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css"  media="screen" />
+	<link rel="stylesheet" href="css/grid.css" type="text/css"  media="screen" />
+	<link rel="stylesheet" href="css/style.css" type="text/css"  media="screen" />
+	<link rel="stylesheet" href="css/fonts.css" type="text/css"  media="screen" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" ></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.js"></script>
+	<script type="text/javascript" src="scripts/cycle2/cycle.js"></script>
+
+</head>
+
+<body>
+<div id="container">
+	<header class="main-header">
+		<div class="grid-container">
+			<div class="grid-1">
+			<img src="img/me/me-transparent.png" width="100" height="100" alt="me"/>
+			</div>
+			<h1 class="grid-5 main-logo">
+			<a href="#">Liam O'Shea</a></h1>		
+			<div class="grid-6">
+				<ul class="main-nav">
+				 	<li><a href="#">Home</a></li> 
+					<li><a href="#">Work</a></li> 
+					<li><a href="#">About Me</a></li>	
+					<li><a href="#contactForm">Contact Me</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+
+<div class="main-banner hide-mobile">
+	<h1>This is the Main Banner Heading</h1>
+	<p>Andouille pork chop pancetta drumstick ground round beef ribs swine brisket ham.</p>
+</div>
+
+	<div class="grid-container">
+		<div class="grid-4">
+			<!--<img src="http://www.epigram.org.uk/images/uploads/2014/DSC_0104__kopie.JPG"/>-->
+			<div class="cycle-slideshow">
+				<img src="img/boxing1.png" alt="Boxing1"/>
+				<img src="img/boxing2.png" alt="Boxing2"/>
+				<img src="img/boxing3.png" alt="Boxing3"/>
+			</div>
+		</div>
+		
+		<div class="grid-4">
+		<h2>Main Content</h2>
+			<div class="text">
+				<p>Bacon ipsum dolor sit amet chicken pork ground round brisket corned beef ball tip shank tail salami filet mignon ham hock pork belly venison shankle. Pig kielbasa drumstick sausage pork chop boudin. Chicken t-bone salami pork chop, beef ribs kevin ham tri-tip beef venison biltong brisket.</p>
+				<p>Venison strip steak meatball chicken, brisket prosciutto sirloin. Capicola drumstick brisket tri-tip salami. Chicken beef jerky, tail turkey prosciutto cow ham sirloin boudin tenderloin.</p>
+			</div>
+		</div>
+
+		<div class="grid-4">
+			<h3>Secondary Content</h3>
+			<p>Strip steak tenderloin kevin swine meatloaf capicola, doner beef turducken pancetta corned beef pork loin shoulder.</p>
+			<hr/>
+			<p>Pork filet mignon leberkas, tail swine venison pancetta turkey shoulder brisket chalkers likes hamburgers.</p>
+			<hr/>
+			<p>Meatball pastrami shoulder, brisket ribeye spare ribs turkey tongue strip steak t-bone.</p>
+		</div>
+	</div>
+		
+	<div class="grid-container hide-mobile">
+		<div class="grid-4">
+			<h2>Content "Below the Gallery"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis, nisl id feugiat venenatis, massa nunc dignissim arcu, ut dictum arcu magna ac urna. Aliquam eget enim ac diam tincidunt tristique. In blandit ultricies tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+		</div>
+		<div class="grid-4">
+			<h2>Content "Below the Gallery"</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis, nisl id feugiat venenatis, massa nunc dignissim arcu, ut dictum arcu magna ac urna. Aliquam eget enim ac diam tincidunt tristique. In blandit ultricies tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+		</div>
+		<div class="grid-4">
+			<h3>Extra Content</h3>
+			<p>Capicola doner turkey tail swine pork belly shank, t-bone prosciutto pastrami pork chop ground round.</p>
+			<hr/>
+			<p>Pork filet mignon leberkas, tail swine venison pancetta turkey shoulder brisket chalkers likes hamburgers.</p>
+		</div>
+	</div>
+</div>
+
+
+<!-- ==========FORM=========-->
+<form id="contactForm" action="processForm.php" method="post">
+
+  <h2>Contact Me...</h2>
+  <ul>
+    <li>
+      <label for="senderName">Your Name</label>
+      <input type="text" name="senderName" id="senderName" placeholder="Please type your name" required="required" maxlength="60" />
+    </li>
+
+    <li>
+      <label for="senderEmail">Your Email Address</label>
+      <input type="email" name="senderEmail" id="senderEmail" placeholder="Please type your email address" required="required" maxlength="50" />
+    </li>
+
+    <li>
+      <label for="message" style="padding-top: .5em;">Your Message</label>
+      <textarea name="message" id="message" placeholder="Please type your message" required="required" cols="80" rows="10" maxlength="10000"></textarea>
+    </li>
+
+  </ul>
+
+  <div id="formButtons">
+    <input type="submit" id="sendMessage" name="sendMessage" value="Send Email" />
+    <input type="button" id="cancel" name="cancel" value="Cancel" />
+  </div>
+
+</form>
+
+<div id="sendingMessage" class="statusMessage"><p>Sending your message. Please wait...</p></div>
+<div id="successMessage" class="statusMessage"><p>Thanks for sending your message! We'll get back to you shortly.</p></div>
+<div id="failureMessage" class="statusMessage"><p>There was a problem sending your message. Please try again.</p></div>
+<div id="incompleteMessage" class="statusMessage"><p>Please complete all the fields in the form before sending.</p></div>
+
+<footer class="main-footer">
+	<a href="https://uk.linkedin.com/pub/liam-o-shea/46/b92/193/"><img src="img/social/linkedin.png" alt="linkedin"/></a>
+	<a href="https://twitter.com/ltoshea"><img src="img/social/twitter.png" alt="twitter"/></a>
+	<p>&copy;2014 Liam O'Shea</p>
+</footer>
+
+</body>
+</html>

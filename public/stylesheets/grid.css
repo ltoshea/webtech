@@ -1,0 +1,104 @@
+/* I will make columns 65px wide, with 20px gutters. Using 1000 pixels width as reference */
+
+
+/* Global
+================================ */
+
+.grid-container{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	width: auto;
+}
+
+/* Media Queries - Going to use this to change layout based on screen size.
+================================ */
+@media (min-width: 1px) and (max-width: 767px){
+	.grid-container > [class^="grid-"]{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.hide-mobile{
+		display:none;
+	}
+}
+
+
+@media (min-width: 768px) {
+
+
+	 /* Gonna make me up some columns, ">" is child combinator. 
+	 Any child of grid container whose class is "grid-"  */
+	.grid-container > [class^="grid-"] {
+		float:left;
+		min-height: 1px; /* Prevent columns from horizontally collapsing! */
+		padding-left: 10px;
+		padding-right: 10px;	
+		padding-top: 10px;
+		margin-left: 2%; /* Left Column Gutters */
+		padding-bottom: 30px;
+	}
+
+	/* I don't want the first column to have a margin */
+	.grid-container > [class^="grid-"]:first-child{
+		margin-left:0;
+	}
+    /* Last column should float right */
+	.grid-container > [class^="grid-"]:last-child{
+		float: right;
+	}
+
+	/* Columns are 65px wide, with 20px gutters - going to use 1000px total width as a reference to work out percentages.
+	=========================================== */
+
+	.grid-1 {
+		width: 6.5%;
+	}
+	.grid-2 {
+		width: 15%;
+	}
+	.grid-3 {
+		width: 23.5%;
+	}
+	.grid-4 {
+		width: 32%;
+	}
+	.grid-5 {
+		width: 40.5%;
+	}
+	.grid-6 {
+		width: 49%;
+	}
+	.grid-7 {
+		width: 57.5%;
+	}
+	.grid-8 {
+		width: 66%;
+	}
+	.grid-9 {
+		width: 74.5%;
+	}
+	.grid-10 {
+		width: 83%;
+	}
+	.grid-11 {
+		width: 91.5%;
+	}
+	.grid-12 {
+		width: 100%;
+	}
+
+	/* Clearfix
+	================================ */
+
+	.group:after,
+	.grid-container:after {
+	  content: " ";
+	  display: table;
+	  clear: both;
+	}
+}

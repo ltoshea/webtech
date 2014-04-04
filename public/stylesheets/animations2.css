@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|Ruthie);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #2c3e50;
+	color: #ecf0f1;
+	font-size: 100%;
+	line-height: 1.25;
+	font-family: 'Exo', Arial, sans-serif;
+}
+
+a {
+	color: #95a5a6;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}
+
+section {
+	padding: 4em 2em;
+	text-align: center;
+}
+
+section h2 {
+	font-weight: 300;
+	font-size: 2em;
+	padding: 1em 0;
+}
+
+.related p {
+	font-size: 1.5em;
+}
+
+.related > a {
+	background: rgba(0,0,0,0.05);
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+	-webkit-transition: color 0.3s, background-color 0.3s;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.related a:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+.container {
+	margin:auto;
+	padding:100px;
+}
+
+@media screen and (max-width: 25em) {
+
+
+}
+
+/*============================================
+Nav bar
+
+#header {
+	width: 100%;
+	background: #7875AA;
+	height: 80px;
+	position: fixed;
+	margin: 0px 0 0 0;
+	opacity: 0.8;
+}
+
+#nav { width: 410px; float: right; margin-top: 20px; }
+#logo a { text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #2c3e50; font-family:"Lato"; font-weight: bold; }
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;
+}
+
+#nav li{
+	margin-top: 9px;
+	float: left;
+	padding-left: 21px;
+}
+#nav li a { color: #2c3e50; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Lato	'; }
+#nav li a.active { color: #2c3e50; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #2c3e50; opacity:1;  }
+*/
+

@@ -1,0 +1,121 @@
+.box {
+	width: 320px;
+	height: 460px;
+	position: relative;
+	background: rgba(255,255,255,1);
+	display: inline-block;
+	margin: 0 10px;
+	cursor: pointer;
+	color: #2c3e50;
+	box-shadow: inset 0 0 0 3px #2c3e50;
+	-webkit-transition: background 0.4s 0.5s;
+	transition: background 0.4s 0.5s;
+}
+
+.box:hover {
+	background: rgba(255,255,255,0);
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.box h3 {
+	font-family: "Ruthie","Lato" cursive;
+	font-size: 50px;
+	line-height: 200px; /* Was 350 */
+	margin: 0 0  -5px;
+	font-weight: 400;
+	width: 100%; /*Changed from 100% to push element left so it looks more centered*/
+}
+
+.box span {
+	display: block;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 5px;
+}
+
+.box h3,
+.box span {
+	-webkit-transition: color 0.4s 0.5s;
+	transition: color 0.4s 0.5s;
+}
+
+.box:hover h3,
+.box:hover span {
+	color: #fff;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.box svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.box svg line {
+	stroke-width: 3;
+	stroke: #ecf0f1;
+	fill: none;
+	-webkit-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+
+.box:hover svg line {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.box svg line.top,
+.box svg line.bottom {
+	stroke-dasharray: 330 240; 
+}
+
+.box svg line.left,
+.box svg line.right {
+	stroke-dasharray: 490 400;
+}
+
+.box:hover svg line.top {
+	-webkit-transform: translateX(-290px);
+	transform: translateX(-290px);
+}
+
+.box:hover svg line.bottom {
+	-webkit-transform: translateX(290px);
+	transform: translateX(290px);
+}
+
+.box:hover svg line.left {
+	-webkit-transform: translateY(920px);
+	transform: translateY(920px);
+}
+
+.box:hover svg line.right {
+	-webkit-transform: translateY(-920px);
+	transform: translateY(-920px);
+}
+
+
+/* Alternatives */
+
+/* Color */
+.animate .box {
+	box-shadow: inset 0 0 0 10px #2c3e50;
+}
+
+.animate .box:hover h3,
+.animate .box:hover span {
+	color: #fe6f83;
+}
+
+.animate .box svg line {
+	stroke-width: 8;
+}
+
+.animate .box:hover svg line {
+	stroke: #fe6f83;
+}
+
